@@ -14,6 +14,7 @@ import static javax.persistence.FetchType.EAGER;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table
 public class Staff {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
