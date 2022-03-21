@@ -6,8 +6,10 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.Set;
+
+import static javax.persistence.FetchType.*;
 
 @Data
 @NoArgsConstructor
@@ -22,6 +24,6 @@ public class Actor {
     private String lastName;
     private Timestamp lastUpdate;
 
-    @ManyToMany(mappedBy = "actors", cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
-    private Set<Film> films = new HashSet<>();
+    @ManyToMany(fetch = EAGER)
+    private Collection<Film> films = new HashSet<>();
 }
