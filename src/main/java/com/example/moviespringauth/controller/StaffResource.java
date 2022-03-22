@@ -7,7 +7,7 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 import com.example.moviespringauth.Entities.Role;
 import com.example.moviespringauth.Entities.Staff;
 import com.example.moviespringauth.Filters.CustomAuthorizationFilter;
-import com.example.moviespringauth.Service.StaffService;
+import com.example.moviespringauth.Service.Interface.StaffService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
