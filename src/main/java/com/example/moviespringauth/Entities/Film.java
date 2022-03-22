@@ -8,7 +8,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Collection;
 
-import static javax.persistence.FetchType.EAGER;
+import static javax.persistence.FetchType.LAZY;
 
 @Data
 @NoArgsConstructor
@@ -31,13 +31,13 @@ public class Film {
     private String specialFeatures;
     private String fullText;
 
-    @ManyToMany(fetch = EAGER)
+    @ManyToMany(fetch = LAZY)
     @JoinTable(name = "film_actor_tbl",
             joinColumns = {@JoinColumn( name = "actorId")},
             inverseJoinColumns = {@JoinColumn(name = "filmId")})
     private Collection<Actor> actors;
 
-    @ManyToMany(fetch = EAGER)
+    @ManyToMany(fetch = LAZY)
     @JoinTable(name = "film_category_tbl",
             joinColumns = {@JoinColumn(name = "categoryId")},
             inverseJoinColumns = {@JoinColumn(name = "filmId")})
