@@ -2,7 +2,7 @@ package com.example.moviespringauth;
 
 import com.example.moviespringauth.Entities.Role;
 import com.example.moviespringauth.Entities.Staff;
-import com.example.moviespringauth.Service.StaffService;
+import com.example.moviespringauth.Service.Interface.StaffService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
