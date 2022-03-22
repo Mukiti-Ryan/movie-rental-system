@@ -1,9 +1,10 @@
-package com.example.moviespringauth.Service;
+package com.example.moviespringauth.Service.Implementation;
 
 import com.example.moviespringauth.Entities.Role;
 import com.example.moviespringauth.Entities.Staff;
 import com.example.moviespringauth.Repositories.RoleRepository;
 import com.example.moviespringauth.Repositories.StaffRepository;
+import com.example.moviespringauth.Service.Interface.StaffService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
