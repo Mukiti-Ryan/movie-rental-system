@@ -1,4 +1,4 @@
-package com.example.moviespringauth.Service;
+package com.example.moviespringauth.Service.Interface;
 
 import com.example.moviespringauth.Entities.Role;
 import com.example.moviespringauth.Entities.Staff;
