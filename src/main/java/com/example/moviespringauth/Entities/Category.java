@@ -23,6 +23,6 @@ public class Category {
     private String nameOfCategory;
     private Timestamp lastUpdate;
 
-    @ManyToMany(fetch = EAGER)
+    @ManyToMany(fetch = LAZY)
     private Collection<Film> films = new HashSet<>();
 }
